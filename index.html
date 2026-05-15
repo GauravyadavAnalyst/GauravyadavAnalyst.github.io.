@@ -1611,99 +1611,27 @@
       </div>
 
 
- <section class="contact-section">
-  <h2>Contact Me!</h2>
-  <form action="https://formspree.io/f/your-id" method="POST" class="contact-form">
-    <input type="hidden" name="_next" value="https://yourportfolio.com">
-
-    <div class="input-group">
-      <input type="text" name="name" placeholder="Full Name" required>
-      <input type="email" name="email" placeholder="Email Address" required>
-    </div>
-
-    <div class="input-group">
-      <input type="number" name="phone" placeholder="Phone Number">
-      <input type="text" name="subject" placeholder="Subject">
-    </div>
-
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-
-    <button type="submit" class="btn-submit">Send Message</button>
-  </form>
-</section>
-
-<style>
-        /* This is where your CSS goes since you don't have a separate file */
+      <div class="contact-form reveal">
+        <div style="font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:#fff;margin-bottom:1.5rem;">Send a message</div>
+        <form action="https://formspree.io/f/mrejnzbq" method="POST" class="contact-form">
+        <input type="hidden" name="_next" value="https://gauravyadavanalyst.github.io/GauravyadavAnalyst.github.io./">
         
-        .contact-section {
-            padding: 50px 20px;
-            text-align: left; /* Aligns "Contact Me!" to the left like your photo */
-            background-color: #020617; /* Dark space background */
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .contact-section h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .contact-form {
-            max-width: 600px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .input-group {
-            display: flex;
-            gap: 15px;
-        }
-
-        /* Fixes the white boxes from your photo */
-        .contact-form input, 
-        .contact-form textarea {
-            width: 100%;
-            padding: 12px 15px;
-            background: rgba(255, 255, 255, 0.05); /* Transparent dark look */
-            border: 1px solid #1e293b;
-            border-radius: 8px;
-            color: white;
-            outline: none;
-            transition: 0.3s;
-        }
-
-        /* Adds the blue glow effect on focus */
-        .contact-form input:focus, 
-        .contact-form textarea:focus {
-            border-color: #38bdf8;
-            box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
-        }
-
-        .btn-submit {
-            padding: 10px 25px;
-            background-color: transparent;
-            color: #38bdf8;
-            border: 2px solid #38bdf8;
-            border-radius: 20px; /* Rounded pill shape like your original */
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.3s;
-            width: fit-content;
-        }
-
-        .btn-submit:hover {
-            background-color: #38bdf8;
-            color: #020617;
-        }
-
-        /* Responsive design for mobile */
-        @media (max-width: 600px) {
-            .input-group {
-                flex-direction: column;
-            }
-        }
-    </style>
+          <div class="form-group">
+          <label class="form-label">Your Name</label>
+          <input type="text" class="form-input" placeholder="Name" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-input" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" placeholder="Message" required></textarea>
+        </div>
+        <button class="form-submit" onclick="handleFormSubmit(this)">Send Message →</button>
+      </div>
+    </div>
+  </div>
 
 <footer>
   <p>© 2026 Gaurav Yadav &nbsp;·&nbsp; Built with passion for data &nbsp;·&nbsp; Bhiwandi, Maharashtra</p>
