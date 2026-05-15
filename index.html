@@ -1611,26 +1611,28 @@
       </div>
 
 
-  <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me!</span></h2>
-
-    <form id="contact-form" action="https://formspree.io/f/mrejnzbq" method="POST">
-        <div class="input-box">
-            <input type="text" name="name" placeholder="Full Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
+ 
+      <div class="contact-form reveal">
+        <div style="font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:#fff;margin-bottom:1.5rem;">Send a message</div>
+        <div class="form-group">
+          <label class="form-label">Your Name</label>
+          <input type="text" class="form-input" placeholder="Name">
         </div>
-        <div class="input-box">
-            <input type="number" name="mobile" placeholder="Mobile Number">
-            <input type="text" name="subject" placeholder="Email Subject">
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-input" placeholder="Email">
         </div>
-        <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-        
-        <div style="display: flex; align-items: center; gap: 20px;">
-            <input type="submit" value="Send Message" class="btn" id="submit-btn">
-            <span id="form-status" style="font-size: 1.6rem; font-weight: 600;"></span>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" placeholder="Message"></textarea>
         </div>
-    </form>
+        <button class="form-submit" onclick="handleFormSubmit(this)">Send Message →</button>
+      </div>
+    </div>
+  </div>
 </section>
+
+
 
 <script>
     const form = document.getElementById("contact-form");
